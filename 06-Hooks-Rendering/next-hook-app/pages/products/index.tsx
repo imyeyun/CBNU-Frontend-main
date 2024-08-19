@@ -8,7 +8,7 @@ const categoryData: Category[]=[
     sort:0,
 },
 {
-    
+
 }
 ]
 
@@ -50,7 +50,7 @@ const ProductSearch = () => {
         </table>
     </div>
 
-  </div>;
+  </div>
   )
 };
 
