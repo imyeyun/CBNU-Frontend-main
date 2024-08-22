@@ -1,33 +1,33 @@
 const footerNavigation = {
   solutions: [
-    { name: "Hosting", href: "#" },
-    { name: "Data Services", href: "#" },
-    { name: "Uptime Monitoring", href: "#" },
-    { name: "Enterprise Services", href: "#" },
+    { name: 'Hosting', href: '#' },
+    { name: 'Data Services', href: '#' },
+    { name: 'Uptime Monitoring', href: '#' },
+    { name: 'Enterprise Services', href: '#' },
   ],
   support: [
-    { name: "Pricing", href: "#" },
-    { name: "Documentation", href: "#" },
-    { name: "Guides", href: "#" },
-    { name: "API Reference", href: "#" },
+    { name: 'Pricing', href: '#' },
+    { name: 'Documentation', href: '#' },
+    { name: 'Guides', href: '#' },
+    { name: 'API Reference', href: '#' },
   ],
   company: [
-    { name: "About", href: "#" },
-    { name: "Blog", href: "#" },
-    { name: "Jobs", href: "#" },
-    { name: "Press", href: "#" },
-    { name: "Partners", href: "#" },
+    { name: 'About', href: '#' },
+    { name: 'Blog', href: '#' },
+    { name: 'Jobs', href: '#' },
+    { name: 'Press', href: '#' },
+    { name: 'Partners', href: '#' },
   ],
   legal: [
-    { name: "Claim", href: "#" },
-    { name: "Privacy", href: "#" },
-    { name: "Terms", href: "#" },
+    { name: 'Claim', href: '#' },
+    { name: 'Privacy', href: '#' },
+    { name: 'Terms', href: '#' },
   ],
   social: [
     {
-      name: "Facebook",
-      href: "#",
-      icon: (props) => (
+      name: 'Facebook',
+      href: '#',
+      icon: props => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
             fillRule="evenodd"
@@ -38,9 +38,9 @@ const footerNavigation = {
       ),
     },
     {
-      name: "Instagram",
-      href: "#",
-      icon: (props) => (
+      name: 'Instagram',
+      href: '#',
+      icon: props => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
             fillRule="evenodd"
@@ -51,18 +51,18 @@ const footerNavigation = {
       ),
     },
     {
-      name: "X",
-      href: "#",
-      icon: (props) => (
+      name: 'X',
+      href: '#',
+      icon: props => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path d="M13.6823 10.6218L20.2391 3H18.6854L12.9921 9.61788L8.44486 3H3.2002L10.0765 13.0074L3.2002 21H4.75404L10.7663 14.0113L15.5685 21H20.8131L13.6819 10.6218H13.6823ZM11.5541 13.0956L10.8574 12.0991L5.31391 4.16971H7.70053L12.1742 10.5689L12.8709 11.5655L18.6861 19.8835H16.2995L11.5541 13.096V13.0956Z" />
         </svg>
       ),
     },
     {
-      name: "GitHub",
-      href: "#",
-      icon: (props) => (
+      name: 'GitHub',
+      href: '#',
+      icon: props => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
             fillRule="evenodd"
@@ -73,9 +73,9 @@ const footerNavigation = {
       ),
     },
     {
-      name: "YouTube",
-      href: "#",
-      icon: (props) => (
+      name: 'YouTube',
+      href: '#',
+      icon: props => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
             fillRule="evenodd"
@@ -111,7 +111,7 @@ const Footer = () => {
                   Solutions
                 </h3>
                 <ul role="list" className="mt-6 space-y-4">
-                  {footerNavigation.solutions.map((item) => (
+                  {footerNavigation.solutions.map(item => (
                     <li key={item.name}>
                       <a
                         href={item.href}
@@ -128,7 +128,7 @@ const Footer = () => {
                   Support
                 </h3>
                 <ul role="list" className="mt-6 space-y-4">
-                  {footerNavigation.support.map((item) => (
+                  {footerNavigation.support.map(item => (
                     <li key={item.name}>
                       <a
                         href={item.href}
@@ -147,7 +147,7 @@ const Footer = () => {
                   Company
                 </h3>
                 <ul role="list" className="mt-6 space-y-4">
-                  {footerNavigation.company.map((item) => (
+                  {footerNavigation.company.map(item => (
                     <li key={item.name}>
                       <a
                         href={item.href}
@@ -164,7 +164,7 @@ const Footer = () => {
                   Legal
                 </h3>
                 <ul role="list" className="mt-6 space-y-4">
-                  {footerNavigation.legal.map((item) => (
+                  {footerNavigation.legal.map(item => (
                     <li key={item.name}>
                       <a
                         href={item.href}

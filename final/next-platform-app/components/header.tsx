@@ -1,16 +1,16 @@
-import { useState } from "react";
-import { Dialog, DialogPanel } from "@headlessui/react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { useState } from 'react';
+import { Dialog, DialogPanel } from '@headlessui/react';
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
 //Link/Image 컴포넌트 참조하기
-import Link from "next/link";
-import Image from "next/image";
+import Link from 'next/link';
+import Image from 'next/image';
 
 const navigation = [
-  { name: "Blog", href: "/blogs" },
-  { name: "Gallary", href: "/gallary" },
-  { name: "Chat", href: "#" },
-  { name: "Company", href: "#" },
+  { name: 'Blog', href: '/blogs' },
+  { name: 'Gallary', href: '/gallary' },
+  { name: 'Chat', href: '/chat/list' },
+  { name: 'Bot', href: '/bot' },
 ];
 
 const Header = () => {
@@ -44,14 +44,17 @@ const Header = () => {
           </button>
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
-          {navigation.map((item) => (
-            <a
-              key={item.name}
-              href={item.href}
-              className="text-sm font-semibold leading-6 text-gray-900"
-            >
+          {navigation.map(item => (
+            // <a
+            //   key={item.name}
+            //   href={item.href}
+            //   className="text-sm font-semibold leading-6 text-gray-900"
+            // >
+            //   {item.name}
+            // </a>
+            <Link key={item.name} href={item.href}>
               {item.name}
-            </a>
+            </Link>
           ))}
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
@@ -106,7 +109,7 @@ const Header = () => {
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
-                {navigation.map((item) => (
+                {navigation.map(item => (
                   <a
                     key={item.name}
                     href={item.href}

@@ -1,9 +1,6 @@
-//신규회원가입 페이지 컴포넌트
-//호출주소 : http://localhost:3003/regist
-const Regist = () => {
-  //회원가입 버튼 클릭시 신규 회원정보 백엔드 처리함수
-  const registSubmit = () => {};
+import { GetServerSideProps } from 'next';
 
+const Regist = () => {
   return (
     <>
       <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
@@ -19,9 +16,7 @@ const Regist = () => {
         </div>
 
         <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-          {/* 신규 회원가입 폼영역 */}
-          <form className="space-y-6" onSubmit={registSubmit}>
-            {/* 메일주소 입력요소 영역 */}
+          <form className="space-y-6" action="#" method="POST">
             <div>
               <label
                 htmlFor="email"
@@ -40,7 +35,7 @@ const Regist = () => {
                 />
               </div>
             </div>
-            {/* 사용자 암호 입력요소 영역 */}
+
             <div>
               <div className="flex items-center justify-between">
                 <label
@@ -61,28 +56,28 @@ const Regist = () => {
                 />
               </div>
             </div>
-            {/* 사용자 이름 입력요소 영역 */}
+
             <div>
               <div className="flex items-center justify-between">
                 <label
-                  htmlFor="name"
+                  htmlFor="password_cofirm"
                   className="block text-sm font-medium leading-6 text-gray-900"
                 >
-                  Name
+                  Password Confirm
                 </label>
               </div>
               <div className="mt-2">
                 <input
-                  id="name"
-                  name="name"
-                  type="text"
+                  id="password_cofirm"
+                  name="password_cofirm"
+                  type="password"
                   autoComplete="current-password"
                   required
                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
               </div>
             </div>
-            {/* 회원가입 버튼표시 영역 */}
+
             <div>
               <button
                 type="submit"
